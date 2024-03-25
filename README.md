@@ -11,7 +11,7 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
     - [x] Il programma chiede il numero di chilometri
     - [x] Il programma chiede l'età del passeggero
 2. ESECUZIONE LOGICA
-    - [ ] Il programma calcola il prezzo del viaggio (0,21€ per chilometro)
+    - [x] Il programma calcola il prezzo del viaggio (0,21€ per chilometro)
 
     Se (il passeggero ha un'età inferiore ai 18 anni)
         risultato - il programma sottrae il 20% dal totale
@@ -20,4 +20,4 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
     Altrimenti 
         risultato - il programma calcola il totale
 3. OUTPUT
-    - [ ] il programma stampa il prezzo finale in forma umana
+    - [x] il programma stampa il prezzo finale in forma umana
