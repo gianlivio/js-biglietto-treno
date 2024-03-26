@@ -1,23 +1,33 @@
+# ESERCIZIO
 Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
 Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
 il prezzo del biglietto è definito in base ai km (0.21 € al km)
 va applicato uno sconto del 20% per i minorenni
 va applicato uno sconto del 40% per gli over 65.
-L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca
+L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca. :wink:
 
+# SOLUZIONE
 
+### Raccolta dati
+- Chiedere all'utente il numero di km
+- Chiedere l'età del passeggero
 
-1. INPUT
-    - [x] Il programma chiede il numero di chilometri
-    - [x] Il programma chiede l'età del passeggero
-2. ESECUZIONE LOGICA
-    - [x] Il programma calcola il prezzo del viaggio (0,21€ per chilometro)
-
-    Se (il passeggero ha un'età inferiore ai 18 anni)
-        risultato - il programma sottrae il 20% dal totale
-    Altrimenti se (il passeggero ha un'età superiore ai 65 anni)
-        risultato - il programma sottrae il 40% dal totale
+### Esecuzione logica
+  - calcolo prezzo base: km * 0.21
+  - Definisco lo sconto
+    ```
+    Se l'èta è minore di 18 anni
+      lo sconto è 20
+    Altrimenti se l'età è maggiore di 65 anni
+      lo sconto è 40
     Altrimenti 
-        risultato - il programma calcola il totale
-3. OUTPUT
-    - [x] il programma stampa il prezzo finale in forma umana
+      lo sconto è 0
+    ```
+  - Calcolo del prezzo scontato
+    ```
+    prezzoScontato = prezo base - (prezzo base * sconto / 100)
+    ```
+
+  ### Output
+  - Creare la porzione html con indicazione di prezzo base, dello sconto e di prezzo finale;
+  - Inserimento della pozione html in pagina
